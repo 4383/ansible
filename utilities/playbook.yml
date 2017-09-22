@@ -1,0 +1,6 @@
+- name: Run using a project directory
+  hosts: all
+  tasks:
+    - docker_service:
+        project_src: hello-world
+        state: absent
